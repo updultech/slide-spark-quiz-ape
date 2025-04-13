@@ -1,5 +1,5 @@
 
-import { BookOpen, BrainCircuit, FileUp, Award, Certificate, Users } from "lucide-react";
+import { BookOpen, BrainCircuit, FileUp, Award, Medal, Users } from "lucide-react";
 
 const features = [
   {
@@ -23,7 +23,7 @@ const features = [
     description: "Earn ApeTokens for completing quizzes and achieving high scores on the platform."
   },
   {
-    icon: <Certificate className="h-8 w-8 text-ape-purple" />,
+    icon: <Medal className="h-8 w-8 text-ape-purple" />,
     title: "NFT Certificates",
     description: "Mint verifiable certificates as NFTs on the ApeChain blockchain upon course completion."
   },
