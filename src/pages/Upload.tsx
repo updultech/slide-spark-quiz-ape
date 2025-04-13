@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Upload, FileUp, File, X } from "lucide-react";
+import { Upload as UploadIcon, FileUp, File, X } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,7 +16,7 @@ type UploadedFile = {
   lastModified: number;
 };
 
-const Upload = () => {
+const UploadPage = () => {
   const [files, setFiles] = useState<UploadedFile[]>([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -114,7 +113,7 @@ const Upload = () => {
 
           <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 mb-8">
             <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 flex flex-col items-center justify-center mb-6">
-              <Upload className="h-12 w-12 text-ape-purple mb-4" />
+              <UploadIcon className="h-12 w-12 text-ape-purple mb-4" />
               <h3 className="text-lg font-medium text-gray-800 mb-2">
                 Drag and drop your files here
               </h3>
@@ -253,4 +252,4 @@ const Upload = () => {
   );
 };
 
-export default Upload;
+export default UploadPage;
